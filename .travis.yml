@@ -7,3 +7,5 @@ script:
  - cd NetCrawlerDetect
  - dotnet restore
  - dotnet build -c Release
+ - cd NetCrawlerDetect.Tests
+ - dotnet test
