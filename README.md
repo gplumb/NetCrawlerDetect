@@ -1,4 +1,4 @@
-# NetCrawlerDetect
+# NetCrawlerDetect &nbsp;[![Build Status](https://travis-ci.org/gplumb/NetCrawlerDetect.svg?branch=master)](https://travis-ci.org/gplumb/NetCrawlerDetect)
 A .net standard port of JayBizzle's CrawlerDetect project: [https://github.com/JayBizzle/Crawler-Detect](https://github.com/JayBizzle/Crawler-Detect).
 
 ## About NetCrawlerDetect
