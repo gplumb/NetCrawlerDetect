@@ -10,6 +10,10 @@
     <PackageProjectUrl>https://github.com/gplumb/NetCrawlerDetect</PackageProjectUrl>
     <Title>NetCrawlerDetect</Title>
     <Description>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Description>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>NetCrawlerDetect</PackageId>
+    <PackageReleaseNotes>Initial port of JayBizzle's CrawlerDetect project.</PackageReleaseNotes>
+    <Summary>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Summary>
   </PropertyGroup>
 
   <ItemGroup>

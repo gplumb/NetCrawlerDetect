@@ -1,9 +1,14 @@
 # NetCrawlerDetect
-A .net standard port of JayBizzle's CrawlerDetect project [(https://github.com/JayBizzle/Crawler-Detect)](https://github.com/JayBizzle/Crawler-Detect).
+A .net standard port of JayBizzle's CrawlerDetect project: [https://github.com/JayBizzle/Crawler-Detect](https://github.com/JayBizzle/Crawler-Detect).
 
 ## About NetCrawlerDetect
 
 NetCrawlerDetect is a .net standard class for detecting bots/crawlers/spiders via the user agent and/or http "from" header. Currently able to detect 1,000's of bots/spiders/crawlers.
+
+### Installation
+The easiest way to get started is to add the nuget package `NetCrawlerDetect` (see [here](https://www.nuget.org/packages/NetCrawlerDetect)).
+
+For those who don't want to use nuget, feel free to clone this repo and copy `CrawlerDetect.cs` and the `Fixtures` folder into your project directly.
 
 ### Usage
 Like its' originator, you can either pass in a collection of web headers (from which the user agent will be extracted) or pass in the user agent string directly.
