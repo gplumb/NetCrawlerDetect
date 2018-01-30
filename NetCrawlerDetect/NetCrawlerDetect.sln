@@ -1,0 +1,27 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCrawlerDetect", "NetCrawlerDetect\NetCrawlerDetect.csproj", "{2537AACE-3138-47C5-8B02-8E7CA001DA28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCrawlerDetect.Tests", "NetCrawlerDetect.Tests\NetCrawlerDetect.Tests.csproj", "{BA60A81E-2293-4FC6-89E8-B44BBE8C20BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2537AACE-3138-47C5-8B02-8E7CA001DA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2537AACE-3138-47C5-8B02-8E7CA001DA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2537AACE-3138-47C5-8B02-8E7CA001DA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2537AACE-3138-47C5-8B02-8E7CA001DA28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA60A81E-2293-4FC6-89E8-B44BBE8C20BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA60A81E-2293-4FC6-89E8-B44BBE8C20BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA60A81E-2293-4FC6-89E8-B44BBE8C20BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA60A81E-2293-4FC6-89E8-B44BBE8C20BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		description = A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).
+		version = 0.0.1
+	EndGlobalSection
+EndGlobal

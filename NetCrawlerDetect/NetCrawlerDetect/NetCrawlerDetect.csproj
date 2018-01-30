@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ReleaseVersion>0.0.1</ReleaseVersion>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>Graham "Gee" Plumb</Authors>
+    <PackageLicenseUrl>https://github.com/gplumb/NetCrawlerDetect/blob/master/LICENSE</PackageLicenseUrl>
+    <Owners>Graham "Gee" Plumb</Owners>
+    <PackageProjectUrl>https://github.com/gplumb/NetCrawlerDetect</PackageProjectUrl>
+    <Title>NetCrawlerDetect</Title>
+    <Description>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Fixtures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
+</Project>
