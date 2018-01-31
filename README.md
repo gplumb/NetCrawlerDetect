@@ -23,8 +23,8 @@ var result = detector.IsCrawler("Mozilla/5.0 (compatible; bingbot/2.0; +http://w
 // Do we have a bot/crawler/spider?
 if(result == true)
 {
-	// Yes. Fetch the name of the bot (optional)
-	var bot = detector.Matches[0].Value;
+    // Yes. Fetch the name of the bot (optional)
+    var bot = detector.Matches[0].Value;
 }
 ```
 
