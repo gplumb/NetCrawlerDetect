@@ -1,0 +1,11 @@
+dist: trusty
+sudo: required
+language: csharp
+mono: none
+dotnet: 2.0.0
+script:
+ - cd NetCrawlerDetect
+ - dotnet restore
+ - dotnet build -c Release
+ - cd NetCrawlerDetect.Tests
+ - dotnet test
