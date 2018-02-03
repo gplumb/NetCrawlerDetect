@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <ReleaseVersion>0.0.4</ReleaseVersion>
-    <PackageVersion>0.0.4</PackageVersion>
+    <ReleaseVersion>0.0.5</ReleaseVersion>
+    <PackageVersion>0.0.5</PackageVersion>
     <Authors>Graham "Gee" Plumb</Authors>
     <PackageLicenseUrl>https://github.com/gplumb/NetCrawlerDetect/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Graham "Gee" Plumb</Owners>
@@ -12,7 +12,7 @@
     <Description>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Description>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>NetCrawlerDetect</PackageId>
-    <PackageReleaseNotes>Added Jobsearch bot</PackageReleaseNotes>
+    <PackageReleaseNotes>Added 5 new bots</PackageReleaseNotes>
     <Summary>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Summary>
   </PropertyGroup>
 
