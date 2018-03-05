@@ -177,6 +177,7 @@ namespace NetCrawlerDetect.Fixtures
                 @"cuwhois\/[0-9]",
                 @"cybo\.com",
                 @"DareBoost",
+                @"help@dataminr\.com",
                 @"DataparkSearch",
                 @"dataprovider",
                 @"Daum(oa)?[ \/][0-9]",
