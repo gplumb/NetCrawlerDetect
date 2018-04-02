@@ -22,7 +22,7 @@ Global
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		description = A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).
-		version = 0.1.1
+		version = 0.1.2
 		Policies = $0
 		$0.VersionControlPolicy = $1
 	EndGlobalSection
