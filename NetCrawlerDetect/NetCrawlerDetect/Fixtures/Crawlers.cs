@@ -760,6 +760,7 @@ namespace NetCrawlerDetect.Fixtures
                 @"touche.com",
                 @"Traackr.com",
                 @"TrapitAgent",
+                @"Trendsmap Resolver",
                 @"trendspottr\.com",
                 @"truwoGPS",
                 @"TulipChain",
