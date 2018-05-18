@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <ReleaseVersion>0.1.3</ReleaseVersion>
-    <PackageVersion>0.1.3</PackageVersion>
+    <ReleaseVersion>0.1.4</ReleaseVersion>
+    <PackageVersion>0.1.4</PackageVersion>
     <Authors>Graham "Gee" Plumb</Authors>
     <PackageLicenseUrl>https://github.com/gplumb/NetCrawlerDetect/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Graham "Gee" Plumb</Owners>
@@ -12,7 +12,7 @@
     <Description>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Description>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>NetCrawlerDetect</PackageId>
-    <PackageReleaseNotes>New crawler: Trendsmap Resolver/0.0.1</PackageReleaseNotes>
+    <PackageReleaseNotes>Huge number of bots added</PackageReleaseNotes>
     <Summary>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Summary>
   </PropertyGroup>
 
