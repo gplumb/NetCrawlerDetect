@@ -18,7 +18,7 @@ namespace NetCrawlerDetect.Fixtures
             {
                 @"Safari.[\d\.]*",
                 @"Firefox.[\d\.]*",
-                @"Chrome.[\d\.]*",
+                @" Chrome.[\d\.]*",
                 @"Chromium.[\d\.]*",
                 @"MSIE.[\d\.]",
                 @"Opera\/[\d\.]*",
