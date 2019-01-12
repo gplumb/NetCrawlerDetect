@@ -66,7 +66,7 @@ namespace NetCrawlerDetect.Tests
         {
             var result = _detector.IsCrawler("Mozilla/5.0 (iPhone; CPU iPhone OS 7_1 like Mac OS X) AppleWebKit (KHTML, like Gecko) Mobile (compatible; Yahoo Ad monitoring; https://help.yahoo.com/kb/yahoo-ad-monitoring-SLN24857.html)");
             Assert.True(result, "Yahoo Ad monitoring IS a bot!");
-            Assert.Equal("Yahoo Ad monitoring", _detector.Matches[0].Value);
+            Assert.Equal("monitoring", _detector.Matches[0].Value);
         }
 
 
