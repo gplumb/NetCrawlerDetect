@@ -357,9 +357,9 @@ namespace NetCrawlerDetect.Fixtures
                 @"flynxapp",
                 @"forensiq",
                 @"FoundSeoTool",
+                @"http:\/\/www.neomo.de\/",
 
                 // Francis [Bot]
-                @"http:\/\/www.neomo.de\/",
                 @"free thumbnails",
                 @"Freeuploader",
                 @"Funnelback",
@@ -1191,6 +1191,7 @@ namespace NetCrawlerDetect.Fixtures
                 @"woorankreview",
                 @"Word\/",
                 @"WordPress\/",
+                @"worldping-api",
                 @"WordupinfoSearch",
                 @"wotbox",
                 @"WP Engine Install Performance API",
