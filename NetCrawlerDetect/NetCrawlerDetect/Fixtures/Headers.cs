@@ -16,24 +16,24 @@ namespace NetCrawlerDetect.Fixtures
             _data = new List<string>()
             {
                 // The default User-Agent string
-                @"USER_AGENT",
+                @"user-agent",
 
                 // Header can occur on devices using Opera Mini
-                @"X_OPERAMINI_PHONE_UA",
+                @"x-operamini-phone-ua",
 
                 // Vodafone specific header: http://www.seoprinciple.com/mobile-web-community-still-angry-at-vodafone/24/
-                @"X_DEVICE_USER_AGENT",
-                @"X_ORIGINAL_USER_AGENT",
-                @"X_SKYFIRE_PHONE",
-                @"X_BOLT_PHONE_UA",
-                @"DEVICE_STOCK_UA",
-                @"X_UCBROWSER_DEVICE_UA",
+                @"x-device-user-agent",
+                @"x-original-user-agent",
+                @"x-skyfire-phone",
+                @"x-bolt-phone-ua",
+                @"device-stock-ua",
+                @"x-ucbrowser-device-ua",
 
                 // Sometimes, bots (especially Google) use a genuine user agent, but fill this header in with their email address
-                @"FROM",
+                @"from",
 
                 // Seen in use by Netsparker
-                @"X_SCANNER",
+                @"x-scanner",
             };
         }
     }

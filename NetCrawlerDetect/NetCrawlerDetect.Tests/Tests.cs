@@ -4,8 +4,6 @@ using System.Net;
 using System.Text.RegularExpressions;
 using Xunit;
 
-using NetCrawlerDetect;
-
 namespace NetCrawlerDetect.Tests
 {
     /// <summary>
@@ -118,14 +116,14 @@ namespace NetCrawlerDetect.Tests
         {
             var headers = new WebHeaderCollection()
             {
-                {"ACCEPT", "*/*"},
-                {"ACCEPT_ENCODING", "DEFLATE"},
-                {"CACHE_CONTROL", "no-cache"},
-                {"CONNECTION", "Keep-Alive"},
-                // {"FROM", "bingbot(at)microsoft.com"},
-                {"HOST", "www.test.com"},
-                {"PRAGMA", "no-cache"},
-                {"USER_AGENT", "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"}
+                {"accept", "*/*"},
+                {"accept-encoding", "DEFLATE"},
+                {"cache-control", "no-cache"},
+                {"connection", "Keep-Alive"},
+                // {"from", "bingbot(at)microsoft.com"},
+                {"host", "www.test.com"},
+                {"pragma", "no-cache"},
+                {"user-agent", "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"}
             };
 
             var cd = new CrawlerDetect(headers);
@@ -148,14 +146,14 @@ namespace NetCrawlerDetect.Tests
         {
             var headers = new WebHeaderCollection()
             {
-                {"ACCEPT", "*/*"},
-                {"ACCEPT_ENCODING", "DEFLATE"},
-                {"CACHE_CONTROL", "no-cache"},
-                {"CONNECTION", "Keep-Alive"},
-                {"FROM", "googlebot(at)googlebot.com"},
-                {"HOST", "www.test.com"},
-                {"PRAGMA", "no-cache"},
-                {"USER_AGENT", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.71 Safari/537.36"}
+                {"accept", "*/*"},
+                {"accept-encoding", "DEFLATE"},
+                {"cache-control", "no-cache"},
+                {"connection", "Keep-Alive"},
+                {"from", "googlebot(at)googlebot.com"},
+                {"host", "www.test.com"},
+                {"pragma", "no-cache"},
+                {"user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.71 Safari/537.36"}
             };
 
             var cd = new CrawlerDetect(headers);

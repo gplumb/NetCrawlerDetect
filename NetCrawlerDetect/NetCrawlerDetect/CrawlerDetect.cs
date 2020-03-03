@@ -46,7 +46,7 @@ namespace NetCrawlerDetect
         /// <summary>
         /// Headers object
         /// </summary>
-        protected Headers _uaHttpHeaders = new Headers();           // TODO: Can this be reduced?
+        protected Headers _uaHttpHeaders = new Headers();
 
 
         /// <summary>
