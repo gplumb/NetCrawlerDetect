@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <ReleaseVersion>0.2.3</ReleaseVersion>
-    <PackageVersion>0.2.3</PackageVersion>
+    <ReleaseVersion>1.2.94</ReleaseVersion>
+    <PackageVersion>1.2.94</PackageVersion>
     <Authors>Graham "Gee" Plumb</Authors>
     <PackageLicenseUrl>https://github.com/gplumb/NetCrawlerDetect/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Graham "Gee" Plumb</Owners>
@@ -12,14 +12,19 @@
     <Description>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Description>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>NetCrawlerDetect</PackageId>
-    <PackageReleaseNotes>Added 7 user agents (up to https://github.com/JayBizzle/Crawler-Detect/pull/333)</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed http header issue. Synchronized agents and devices to v1.2.94 of CrawlerDetect</PackageReleaseNotes>
     <Summary>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Summary>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="Fixtures\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2"><PrivateAssets>all</PrivateAssets>
+<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+</PackageReference>
   </ItemGroup>
 </Project>
