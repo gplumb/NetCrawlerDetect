@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <ReleaseVersion>1.2.941</ReleaseVersion>
-    <PackageVersion>1.2.941</PackageVersion>
+    <ReleaseVersion>1.2.95</ReleaseVersion>
+    <PackageVersion>1.2.95</PackageVersion>
     <Authors>Graham "Gee" Plumb</Authors>
     <PackageLicenseUrl>https://github.com/gplumb/NetCrawlerDetect/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Graham "Gee" Plumb</Owners>
@@ -11,7 +11,7 @@
     <Title>NetCrawlerDetect</Title>
     <Description>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Description>
     <PackageId>NetCrawlerDetect</PackageId>
-    <PackageReleaseNotes>Bug fix when using the package from .net 4.7.x</PackageReleaseNotes>
+    <PackageReleaseNotes>Synchronized agents and devices to v1.2.95 of CrawlerDetect</PackageReleaseNotes>
     <Summary>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Summary>
   </PropertyGroup>
 
