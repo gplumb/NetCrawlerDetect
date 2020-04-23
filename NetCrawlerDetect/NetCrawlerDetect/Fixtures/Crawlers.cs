@@ -295,6 +295,7 @@ namespace NetCrawlerDetect.Fixtures
                 @"DTS Agent",
                 @"dubaiindex",
                 @"DuplexWeb-Google",
+                @"DynatraceSynthetic",
                 @"EARTHCOM",
                 @"Easy-Thumb",
                 @"EasyDL",
@@ -374,9 +375,9 @@ namespace NetCrawlerDetect.Fixtures
                 @"flynxapp",
                 @"forensiq",
                 @"FoundSeoTool",
-                @"http:\/\/www.neomo.de\/",
 
                 // Francis [Bot]
+                @"http:\/\/www.neomo.de\/",
                 @"free thumbnails",
                 @"Freeuploader",
                 @"Funnelback",
@@ -1224,6 +1225,7 @@ namespace NetCrawlerDetect.Fixtures
                 @"Whibse",
                 @"WhoRunsCoinHive",
                 @"Whynder Magnet",
+                @"WinHttp-Autoproxy-Service",
                 @"Windows-RSS-Platform",
                 @"WinPodder",
                 @"wkhtmlto",
@@ -1288,7 +1290,7 @@ namespace NetCrawlerDetect.Fixtures
                 @"Zombie\.js",
                 @"Zoom\.Mac",
                 @"ZyBorg",
-                @"[a-z0-9\-_]*(bot|crawl|archiver|transcoder|spider|uptime|validator|fetcher|cron|checker|reader|extractor|monitoring|analyzer|scraper)",
+                @"[a-z0-9\-_]*(bot|crawl|archiver|transcoder|spider|uptime|validator|fetcher|cron|checker|reader|extractor|monitoring|analyzer|scraper)"
             };
         }
     }
