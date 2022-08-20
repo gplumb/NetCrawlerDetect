@@ -63,9 +63,10 @@ namespace NetCrawlerDetect.Fixtures
                 @"; IDbot",
                 @"; ID bot",
                 @"; POWER BOT",
+                @"OCTOPUS-CORE",
 
                 // Remove the following characters ;
-                @";",
+                @";"
             };
         }
     }
