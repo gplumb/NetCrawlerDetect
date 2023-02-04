@@ -68,6 +68,12 @@ namespace NetCrawlerDetect
 
 
         /// <summary>
+        /// Fetch the user agent
+        /// </summary>
+        public string UserAgent => _userAgent;
+
+
+        /// <summary>
         /// Constructor
         /// </summary>
         public CrawlerDetect()
