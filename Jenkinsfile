@@ -4,7 +4,7 @@ pipeline {
         gitParameter defaultValue: 'origin/main', name: 'TAG', type: 'PT_TAG', sortMode: 'DESCENDING_SMART'
     }
 	environment {
-        GITHUB_TOKEN = credentials('GitHub-JSport'),
+        GITHUB_TOKEN = credentials('GitHub-JSport')
 		TAGNAME = ${params.TAG}
     }
     stages {
