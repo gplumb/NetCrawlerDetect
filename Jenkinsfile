@@ -32,8 +32,6 @@ pipeline {
         }
         stage('Push pack to github') {
             steps {
-				echo "path: ./Package/JSport.NetCrawlerDetect.${TAGNAME}.nupkg"
-				echo "token: ${GITHUB_TOKEN}"
                 sh 'dotnet nuget push "./Package/JSport.NetCrawlerDetect.${TAGNAME}.nupkg" --source "https://nuget.pkg.github.com/j-sport/index.json" --force-english-output -k ${GITHUB_TOKEN}'
             }
         }

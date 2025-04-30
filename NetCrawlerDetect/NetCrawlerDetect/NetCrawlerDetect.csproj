@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <ReleaseVersion>1.3.3.5</ReleaseVersion>
-    <PackageVersion>1.3.3.5</PackageVersion>
+    <ReleaseVersion>1.3.4</ReleaseVersion>
+    <PackageVersion>1.3.4</PackageVersion>
     <Authors>JSport</Authors>
     <PackageLicenseUrl>https://github.com/j-sport/NetCrawlerDetect/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>JSport</Owners>
