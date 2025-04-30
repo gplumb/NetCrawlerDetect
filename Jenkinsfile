@@ -36,7 +36,7 @@ pipeline {
         }
         stage('Push pack to github') {
             steps {
-                sh 'dotnet nuget push "./Package/JSport.NetCrawlerDetect.${env.TagName}.nupkg" --source "github" --force-english-output -k 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'
+                sh 'dotnet nuget push "./Package/JSport.NetCrawlerDetect.${env.TagName}.nupkg" --source "github" --force-english-output -k credentials("GitHub-JSport")'
             }
         }
         stage('Remove pack from folder') {
