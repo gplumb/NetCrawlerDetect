@@ -5,7 +5,7 @@ pipeline {
     }
 	environment {
         GITHUB_TOKEN = credentials('GitHub-JSport')
-		TAGNAME = ${params.TAG}
+		TAGNAME = "${params.TAG}"
     }
     stages {
         stage('Checkout') {
