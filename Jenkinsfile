@@ -5,6 +5,7 @@ pipeline {
     }
 	environment {
         GITHUB_TOKEN = credentials('GitHub-JSport')
+		TAGNAME = params.TAG
     }
     stages {
         stage('Checkout') {
@@ -24,14 +25,6 @@ pipeline {
                 xunit checksName: '', tools: [MSTest(excludesPattern: '', pattern: '**/TestResults/*.xml', stopProcessingIfError: true)]
             }
         }
-        stage('Define tag name') {
-            steps {
-                script {
-                    env.TagName = params.TAG
-                }
-                echo "$TagName"
-            }
-        }
         stage('Create pack') {
             steps {
                 sh 'dotnet pack NetCrawlerDetect/NetCrawlerDetect/NetCrawlerDetect.csproj -c Release -o ./Package'
@@ -39,7 +32,9 @@ pipeline {
         }
         stage('Push pack to github') {
             steps {
-                sh 'dotnet nuget push "./Package/JSport.NetCrawlerDetect.${env.TagName}.nupkg" --source "github" --force-english-output -k ${env.GITHUB_TOKEN}'
+				echo "path: ./Package/JSport.NetCrawlerDetect.${TAGNAME}.nupkg"
+				echo "token: ${GITHUB_TOKEN}"
+                sh 'dotnet nuget push "./Package/JSport.NetCrawlerDetect.${TAGNAME}.nupkg" --source "github" --force-english-output -k ${GITHUB_TOKEN}'
             }
         }
         stage('Remove pack from folder') {
