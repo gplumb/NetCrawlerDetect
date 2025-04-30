@@ -21,7 +21,7 @@ pipeline {
         stage('Test solution') {
             steps {
                 sh 'dotnet test NetCrawlerDetect/NetCrawlerDetect.sln --logger "trx;LogFileName=unit_tests.xml"'
-                xunit checksName: '', tools: [xUnitDotNet(excludesPattern: '', pattern: '*/TestResults/*.xml', stopProcessingIfError: true)]
+                xunit checksName: '', tools: [MSTest(excludesPattern: '', pattern: '*/TestResults/*.xml', stopProcessingIfError: true)]
             }
         }
         stage('Define tag name') {
