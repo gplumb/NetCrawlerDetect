@@ -15,12 +15,12 @@ pipeline {
         }
         stage('Build solution') {
             steps {
-                sh 'dotnet build'
+                sh 'dotnet build NetCrawlerDetect/NetCrawlerDetect.sln'
             }
         }
         stage('Test solution') {
             steps {
-                sh 'dotnet test --logger "trx;LogFileName=unit_tests.xml"'
+                sh 'dotnet test NetCrawlerDetect/NetCrawlerDetect.sln --logger "trx;LogFileName=unit_tests.xml"'
                 xunit checksName: '', tools: [xUnitDotNet(excludesPattern: '', pattern: '*/TestResults/*.xml', stopProcessingIfError: true)]
             }
         }
