@@ -3,6 +3,9 @@ pipeline {
     parameters {
         gitParameter defaultValue: 'origin/main', name: 'TAG', type: 'PT_TAG', sortMode: 'DESCENDING_SMART'
     }
+	environment {
+        GITHUB_TOKEN = credentials('GitHub-JSport')
+    }
     stages {
         stage('Checkout') {
             steps {
@@ -36,7 +39,7 @@ pipeline {
         }
         stage('Push pack to github') {
             steps {
-                sh 'dotnet nuget push "./Package/JSport.NetCrawlerDetect.${env.TagName}.nupkg" --source "github" --force-english-output -k credentials("GitHub-JSport")'
+                sh 'dotnet nuget push "./Package/JSport.NetCrawlerDetect.${env.TagName}.nupkg" --source "github" --force-english-output -k ${env.GITHUB_TOKEN}'
             }
         }
         stage('Remove pack from folder') {
