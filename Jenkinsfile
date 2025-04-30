@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'ubuntu' }
     parameters {
-        gitParameter defaultValue: 'origin/main', name: 'TAG', type: 'PT_BRANCH_TAG', sortMode: 'DESCENDING_SMART'
+        gitParameter defaultValue: 'origin/main', name: 'TAG', type: 'PT_TAG', sortMode: 'DESCENDING_SMART'
     }
 	environment {
         GITHUB_TOKEN = credentials('GitHub-JSport')
@@ -24,7 +24,29 @@ pipeline {
                 xunit checksName: '', tools: [MSTest(excludesPattern: '', pattern: '**/TestResults/*.xml', stopProcessingIfError: true)]
             }
         }
-        
+        stage('Define tag name') {
+            steps {
+                script {
+                    env.TagName = params.TAG
+                }
+                echo "$TagName"
+            }
+        }
+        stage('Create pack') {
+            steps {
+                sh 'dotnet pack NetCrawlerDetect/NetCrawlerDetect/NetCrawlerDetect.csproj -c Release -o ./Package'
+            }
+        }
+        stage('Push pack to github') {
+            steps {
+                sh 'dotnet nuget push "./Package/JSport.NetCrawlerDetect.${env.TagName}.nupkg" --source "github" --force-english-output -k ${env.GITHUB_TOKEN}'
+            }
+        }
+        stage('Remove pack from folder') {
+            steps {
+                sh 'rm -rf ./Package'
+            }
+        }
     }
     
     post {
