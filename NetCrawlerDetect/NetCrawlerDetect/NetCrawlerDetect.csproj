@@ -4,10 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <ReleaseVersion>1.3.4</ReleaseVersion>
     <PackageVersion>1.3.4</PackageVersion>
-    <Authors>JSport</Authors>
-    <PackageLicenseUrl>https://github.com/j-sport/NetCrawlerDetect/blob/master/LICENSE</PackageLicenseUrl>
-    <Owners>JSport</Owners>
-    <PackageProjectUrl>https://github.com/j-sport/NetCrawlerDetect</PackageProjectUrl>
+    <Authors>Graham "Gee" Plumb</Authors>
+    <PackageLicenseUrl>https://github.com/gplumb/NetCrawlerDetect/blob/master/LICENSE</PackageLicenseUrl>
+    <Owners>Graham "Gee" Plumb</Owners>
+    <PackageProjectUrl>https://github.com/gplumb/NetCrawlerDetect</PackageProjectUrl>
     <Title>NetCrawlerDetect</Title>
     <Description>A .net standard port of JayBizzle's CrawlerDetect project (https://github.com/JayBizzle/Crawler-Detect).</Description>
     <PackageId>JSport.NetCrawlerDetect</PackageId>
@@ -24,3 +24,4 @@
   </ItemGroup>
 
 </Project>
+
